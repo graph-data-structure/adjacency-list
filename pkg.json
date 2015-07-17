@@ -1,0 +1,17 @@
+{
+	"out": "js/dist/",
+	"debug": false,
+	"code": {
+		"test": [
+			"test",
+			"js"
+		],
+		"main": [
+			"js",
+			"dist",
+			"adjacency-list.js"
+		]
+	},
+	"name": "adjacency-list",
+	"src": "js/src/"
+}
