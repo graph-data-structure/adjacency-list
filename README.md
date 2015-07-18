@@ -94,3 +94,34 @@ Alternatively, you can use any tool mentioned [here](http://bower.io/docs/tools/
 ```js
 require( [ "aureooms-js-adjacency-list" ] , function ( adjacencylist ) { ... } ) ;
 ```
+
+## Use
+
+
+```js
+let dll = require( "aureooms-js-dll" ) ;
+
+let Graph = adjacencylist.List( dll.DoublyLinkedList ) ;
+
+let { V , E , N } = require( "aureooms-js-graph-theory-notation" ) ;
+
+let G = new Graph( ) ;
+
+let u = G.vadd( ) ;
+
+let v = G.vadd( ) ;
+
+let e = G.eadd( u , v ) ;
+
+for ( let w of V( G ) ) ... ;
+
+for ( let e of E( G ) ) ... ;
+
+for ( let w of N( G , u ) ) ... ;
+
+G.edel( e ) ;
+
+G.vdel( v ) ;
+
+G.vdel( u ) ;
+```
