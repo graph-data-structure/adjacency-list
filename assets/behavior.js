@@ -161,11 +161,51 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/aureooms/dev/js/js-adjacency-list/js/src/dummy.js",
-        "projectPath": "js/src/dummy.js",
-        "targetPath": "dummy",
-        "pageTitle": "dummy",
-        "title": "dummy"
+        "sourcePath": "/home/aureooms/dev/js/js-adjacency-list/js/src/Edge.js",
+        "projectPath": "js/src/Edge.js",
+        "targetPath": "Edge",
+        "pageTitle": "Edge",
+        "title": "Edge"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-adjacency-list/js/src/List.js",
+        "projectPath": "js/src/List.js",
+        "targetPath": "List",
+        "pageTitle": "List",
+        "title": "List"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-adjacency-list/js/src/Vertex.js",
+        "projectPath": "js/src/Vertex.js",
+        "targetPath": "Vertex",
+        "pageTitle": "Vertex",
+        "title": "Vertex"
       },
       "depth": 1,
       "outline": []
