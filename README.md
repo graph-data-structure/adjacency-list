@@ -1,7 +1,8 @@
 [js-adjacency-list](http://aureooms.github.io/js-adjacency-list)
 ==
 
-adjacency list code bricks for JavaScript
+Adjacency list code bricks for JavaScript. Parent is
+[js-gn](http://github.com/aureooms/js-gn).
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-adjacency-list.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-adjacency-list/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-adjacency-list.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-adjacency-list)
