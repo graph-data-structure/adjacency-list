@@ -1,47 +1,47 @@
 {
-  "main": "js/dist/adjacency-list.js",
-  "version": "0.0.1",
-  "bugs": {
-    "url": "https://github.com/aureooms/js-adjacency-list/issues"
-  },
-  "keywords": [
-    "adjacency",
-    "bricks",
-    "data",
-    "edge",
-    "edges",
-    "ender",
-    "graph",
-    "graphs",
-    "javascript",
-    "js",
-    "list",
-    "structure",
-    "structures",
-    "vertex",
-    "vertices"
-  ],
-  "devDependencies": {
-    "aureooms-js-dll": "^6.0.9",
-    "aureooms-js-itertools": "^1.1.2",
-    "aureooms-node-package": "^4.2.5"
-  },
-  "name": "aureooms-js-adjacency-list",
-  "homepage": "http://aureooms.github.io/js-adjacency-list/",
-  "scripts": {
-    "test": "./node_modules/.bin/aureooms-node-package-test",
-    "doc": "./node_modules/.bin/groc",
-    "build": "./node_modules/.bin/aureooms-node-package-build"
-  },
-  "description": "adjacency list code bricks for JavaScript",
-  "spm": {
-    "main": "js/dist/adjacency-list.js"
-  },
-  "author": "aureooms",
-  "dependencies": {},
-  "license": "AGPL-3.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/aureooms/js-adjacency-list.git"
-  }
+	"main": "js/dist/adjacency-list.js",
+	"version": "1.0.0",
+	"bugs": {
+		"url": "https://github.com/aureooms/js-adjacency-list/issues"
+	},
+	"keywords": [
+		"adjacency",
+		"bricks",
+		"data",
+		"edge",
+		"edges",
+		"ender",
+		"graph",
+		"graphs",
+		"javascript",
+		"js",
+		"list",
+		"structure",
+		"structures",
+		"vertex",
+		"vertices"
+	],
+	"devDependencies": {
+		"aureooms-js-dll": "^6.0.9",
+		"aureooms-js-itertools": "^1.1.2",
+		"aureooms-node-package": "^4.2.5"
+	},
+	"name": "aureooms-js-adjacency-list",
+	"homepage": "http://aureooms.github.io/js-adjacency-list/",
+	"scripts": {
+		"test": "./node_modules/.bin/aureooms-node-package-test",
+		"doc": "./node_modules/.bin/groc",
+		"build": "./node_modules/.bin/aureooms-node-package-build"
+	},
+	"description": "adjacency list code bricks for JavaScript",
+	"spm": {
+		"main": "js/dist/adjacency-list.js"
+	},
+	"author": "aureooms",
+	"dependencies": {},
+	"license": "AGPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aureooms/js-adjacency-list.git"
+	}
 }
