@@ -4,6 +4,10 @@
 Adjacency list code bricks for JavaScript. Parent is
 [js-gn](http://github.com/aureooms/js-gn).
 
+```js
+for ( let e of E( G ) ) ... ;
+```
+
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-adjacency-list.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-adjacency-list/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-adjacency-list.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-adjacency-list)
 [![Bower version](http://img.shields.io/bower/v/aureooms-js-adjacency-list.svg?style=flat)](http://bower.io/search/?q=aureooms-js-adjacency-list)
