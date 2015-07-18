@@ -21,7 +21,7 @@ const List = function ( DLL ) {
 	Graph.prototype.vdel = function ( v ) {
 
 		// remove all incident edges
-		for ( let e of this.eitr( v ) ) this.edel( e ) ;
+		for ( let e of this.iitr( v ) ) this.edel( e ) ;
 
 		// remove vertex
 		this.E.erase( v.iterator ) ;
@@ -65,7 +65,7 @@ const List = function ( DLL ) {
 
 	} ;
 
-	Graph.prototype.eitr = function* ( v ) {
+	Graph.prototype.iitr = function* ( v ) {
 
 		yield* v.E ;
 
@@ -77,9 +77,27 @@ const List = function ( DLL ) {
 
 	} ;
 
-	Graph.prototype.aeitr = function* ( ) {
+	Graph.prototype.eitr = function* ( ) {
 
 		yield* this.E ;
+
+	} ;
+
+	Graph.prototype.edges = function* ( ) {
+
+		for ( let e of this.eitr( ) ) yield [ e.u , e.v , e ] ;
+
+	} ;
+
+	Graph.prototype.incident = function* ( v ) {
+
+		for ( let e of this.iitr( v ) ) yield [ e.u , e.v , e ] ;
+
+	} ;
+
+	Graph.prototype.endpoints = function ( e ) {
+
+		return [ e.u , e.v ] ;
 
 	} ;
 
