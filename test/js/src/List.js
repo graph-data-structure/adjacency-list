@@ -97,7 +97,7 @@ test( 'List' , function ( ) {
 
 	k = 0 ;
 	set = new WeakSet( map ( function ( e ) {
-		return e[0] === v[0] ? e[1] : e[0] ;
+		return e.u === v[0] ? e.v : e.u ;
 	} , e[0] ) ) ;
 
 	ex( map( function ( j ) {
@@ -122,9 +122,10 @@ test( 'List' , function ( ) {
 
 	} ) ;
 
-	// delete vertex 3
+	// delete vertex 10
 
-	g.vdel(v.splice(3, 1)[0]);
+	g.vdel(v.splice(10, 1)[0]);
+	e[0].splice(0, 1)[0];
 
 	k = 0 ;
 	set = new WeakSet( v ) ;
@@ -137,7 +138,7 @@ test( 'List' , function ( ) {
 
 	deepEqual( k , v.length , 'check vertex count after del' ) ;
 
-	e[0].splice(2, 1);
+	e[0].splice(1, 1);
 
 	// delete remaining edges
 	r.forEach( function ( m ) {

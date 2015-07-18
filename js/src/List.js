@@ -38,8 +38,8 @@ const List = function ( DLL ) {
 		// add to edge list of u
 		e.uiterator = u.E.push( e ) ;
 
-		// add to edge list of v
-		e.viterator = v.E.push( e ) ;
+		// add to edge list of v if u !== v
+		if ( u !== v ) e.viterator = v.E.push( e ) ;
 
 		return e ;
 
@@ -53,8 +53,8 @@ const List = function ( DLL ) {
 		// remove from edge list of u
 		e.u.E.erase( e.uiterator ) ;
 
-		// remove from edge list of v
-		e.v.E.erase( e.viterator ) ;
+		// remove from edge list of v if u !== v
+		if ( e.u !== e.v ) e.v.E.erase( e.viterator ) ;
 
 	} ;
 
@@ -68,6 +68,12 @@ const List = function ( DLL ) {
 	Graph.prototype.eitr = function* ( v ) {
 
 		yield* v.E ;
+
+	} ;
+
+	Graph.prototype.nitr = function* ( w ) {
+
+		for ( let { u , v } of w.E ) yield u === w ? v : u ;
 
 	} ;
 
