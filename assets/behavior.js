@@ -147,8 +147,56 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
               "depth": 3
             }
           ]
+        }, {
+          "type": "heading",
+          "data": {
+            "level": 2,
+            "title": "Use",
+            "slug": "use"
+          },
+          "depth": 2
         }
       ]
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-adjacency-list/js/src/DiEdge.js",
+        "projectPath": "js/src/DiEdge.js",
+        "targetPath": "DiEdge",
+        "pageTitle": "DiEdge",
+        "title": "DiEdge"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-adjacency-list/js/src/DiVertex.js",
+        "projectPath": "js/src/DiVertex.js",
+        "targetPath": "DiVertex",
+        "pageTitle": "DiVertex",
+        "title": "DiVertex"
+      },
+      "depth": 1,
+      "outline": []
     }, {
       "type": "file",
       "data": {
@@ -181,11 +229,31 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/aureooms/dev/js/js-adjacency-list/js/src/List.js",
-        "projectPath": "js/src/List.js",
-        "targetPath": "List",
-        "pageTitle": "List",
-        "title": "List"
+        "sourcePath": "/home/aureooms/dev/js/js-adjacency-list/js/src/MultiDiGraph.js",
+        "projectPath": "js/src/MultiDiGraph.js",
+        "targetPath": "MultiDiGraph",
+        "pageTitle": "MultiDiGraph",
+        "title": "MultiDiGraph"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-adjacency-list/js/src/MultiGraph.js",
+        "projectPath": "js/src/MultiGraph.js",
+        "targetPath": "MultiGraph",
+        "pageTitle": "MultiGraph",
+        "title": "MultiGraph"
       },
       "depth": 1,
       "outline": []
