@@ -1,6 +1,6 @@
 {
 	"main": "js/dist/adjacency-list.js",
-	"version": "3.0.2",
+	"version": "3.0.3",
 	"bugs": {
 		"url": "https://github.com/aureooms/js-adjacency-list/issues"
 	},
