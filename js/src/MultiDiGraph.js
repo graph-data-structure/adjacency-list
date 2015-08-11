@@ -71,6 +71,10 @@ const MultiDiGraph = function ( List , Map ) {
 		uv.twin = vu ;
 		vu.twin = uv ;
 
+		// set ref
+		uv.ref = uv ;
+		vu.ref = uv ;
+
 		return uv ;
 
 	} ;
@@ -94,7 +98,11 @@ const MultiDiGraph = function ( List , Map ) {
 
 	Graph.prototype.eitr = function* ( ) {
 
-		for ( let [ _ , edges ] of this.succ ) yield* edges ;
+		for ( let [ _ , edges ] of this.succ ) {
+
+			for ( let e of edges ) yield e.ref ;
+
+		}
 
 	} ;
 

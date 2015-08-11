@@ -6,6 +6,7 @@ const DiEdge = function ( u , v , list ) {
 	this.iterator = null ;
 	this.twin = null ;
 	this.list = list ;
+	this.ref = ref ;
 
 } ;
 
