@@ -29,7 +29,8 @@ for operation involving the successors and predecessors maps.</p></div></div><di
 
 		<span class="hljs-keyword">const</span> uv = <span class="hljs-keyword">new</span> DiEdge( u , v , <span class="hljs-keyword">this</span>.succ.get( u ) ) ;
 		<span class="hljs-keyword">const</span> vu = <span class="hljs-keyword">new</span> DiEdge( v , u , <span class="hljs-keyword">this</span>.pred.get( v ) ) ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>add to edge list of u</p></div></div><div class="code"><div class="wrapper">		uv.iterator = uv.list.push( uv ) ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>add to edge list of v</p></div></div><div class="code"><div class="wrapper">		vu.iterator = vu.list.push( vu ) ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>set twin</p></div></div><div class="code"><div class="wrapper">		uv.twin = vu ;
-		vu.twin = uv ;
+		vu.twin = uv ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>set ref</p></div></div><div class="code"><div class="wrapper">		uv.ref = uv ;
+		vu.ref = uv ;
 
 		<span class="hljs-keyword">return</span> uv ;
 
@@ -49,7 +50,11 @@ for operation involving the successors and predecessors maps.</p></div></div><di
 
 	Graph.prototype.eitr = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"> </span>) </span>{
 
-		<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> [ _ , edges ] <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.succ ) <span class="hljs-keyword">yield</span>* edges ;
+		<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> [ _ , edges ] <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.succ ) {
+
+			<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> e <span class="hljs-keyword">of</span> edges ) <span class="hljs-keyword">yield</span> e.ref ;
+
+		}
 
 	} ;
 
