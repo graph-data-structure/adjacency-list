@@ -4,7 +4,7 @@
 	],
 	"repo": "aureooms/js-adjacency-list",
 	"description": "adjacency list code bricks for JavaScript",
-	"version": "3.0.3",
+	"version": "3.0.4",
 	"main": "js/dist/adjacency-list.js",
 	"name": "aureooms-js-adjacency-list",
 	"license": "AGPL-3.0"
