@@ -4,6 +4,10 @@
 Adjacency list code bricks for JavaScript. Parent is
 [js-gn](http://github.com/aureooms/js-gn).
 
+```js
+for ( let e of E( G ) ) ... ;
+```
+
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-adjacency-list.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-adjacency-list/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-adjacency-list.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-adjacency-list)
 [![Bower version](http://img.shields.io/bower/v/aureooms-js-adjacency-list.svg?style=flat)](http://bower.io/search/?q=aureooms-js-adjacency-list)
@@ -93,4 +97,35 @@ Alternatively, you can use any tool mentioned [here](http://bower.io/docs/tools/
 ### jam
 ```js
 require( [ "aureooms-js-adjacency-list" ] , function ( adjacencylist ) { ... } ) ;
+```
+
+## Use
+
+
+```js
+let dll = require( "aureooms-js-dll" ) ;
+
+let Graph = adjacencylist.List( dll.DoublyLinkedList ) ;
+
+let { V , E , N } = require( "aureooms-js-graph-theory-notation" ) ;
+
+let G = new Graph( ) ;
+
+let u = G.vadd( ) ;
+
+let v = G.vadd( ) ;
+
+let e = G.eadd( u , v ) ;
+
+for ( let w of V( G ) ) ... ;
+
+for ( let e of E( G ) ) ... ;
+
+for ( let w of N( G , u ) ) ... ;
+
+G.edel( e ) ;
+
+G.vdel( v ) ;
+
+G.vdel( u ) ;
 ```
