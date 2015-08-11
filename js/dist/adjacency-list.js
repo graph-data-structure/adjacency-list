@@ -4,7 +4,7 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 
 (function () {
 
-	"use strict";
+	'use strict';
 
 	var definition = function definition(exports, undefined) {
 
@@ -790,7 +790,7 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 					for (var _iterator10 = this.iitr(v)[Symbol.iterator](), _step10; !(_iteratorNormalCompletion10 = (_step10 = _iterator10.next()).done); _iteratorNormalCompletion10 = true) {
 						var e = _step10.value;
 						this.edel(e);
-					}
+					} // remove vertex
 				} catch (err) {
 					_didIteratorError10 = true;
 					_iteratorError10 = err;
@@ -806,7 +806,6 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 					}
 				}
 
-				// remove vertex
 				this.V.erase(v.iterator);
 			};
 
