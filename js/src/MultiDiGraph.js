@@ -58,14 +58,14 @@ const MultiDiGraph = function ( List , Map ) {
 	 */
 	Graph.prototype.eadd = function ( u , v ) {
 
-		const uv = new DiEdge( u , v , this.succ ) ;
-		const vu = new DiEdge( v , u , this.pred ) ;
+		const uv = new DiEdge( u , v , this.succ.get( u ) ) ;
+		const vu = new DiEdge( v , u , this.pred.get( v ) ) ;
 
 		// add to edge list of u
-		uv.iterator = this.succ.get( u ).push( uv ) ;
+		uv.iterator = uv.list.push( uv ) ;
 
 		// add to edge list of v
-		vu.iterator = this.pred.get( v ).push( vu ) ;
+		vu.iterator = vu.list.push( vu ) ;
 
 		// set twin
 		uv.twin = vu ;
