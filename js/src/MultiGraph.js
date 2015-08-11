@@ -1,16 +1,27 @@
 
-const List = function ( DLL ) {
+/**
+ * Complexity of each update operation in comments for
+ * a classical Doubly Linked List implementation.
+ */
 
+const MultiGraph = function ( List ) {
+
+	/**
+	 * O(1)
+	 */
 	const Graph = function ( ) {
 
-		this.V = new DLL( ) ;
-		this.E = new DLL( ) ;
+		this.V = new List( ) ;
+		this.E = new List( ) ;
 
 	} ;
 
+	/**
+	 * O(1)
+	 */
 	Graph.prototype.vadd = function ( ) {
 
-		const v = new Vertex( new DLL( ) ) ;
+		const v = new Vertex( new List( ) ) ;
 
 		v.iterator = this.V.push( v ) ;
 
@@ -18,16 +29,22 @@ const List = function ( DLL ) {
 
 	} ;
 
+	/**
+	 * O(n) where n is the degree of v
+	 */
 	Graph.prototype.vdel = function ( v ) {
 
 		// remove all incident edges
 		for ( let e of this.iitr( v ) ) this.edel( e ) ;
 
 		// remove vertex
-		this.E.erase( v.iterator ) ;
+		this.V.erase( v.iterator ) ;
 
 	} ;
 
+	/**
+	 * O(1)
+	 */
 	Graph.prototype.eadd = function ( u , v ) {
 
 		const e = new Edge( u , v ) ;
@@ -45,6 +62,9 @@ const List = function ( DLL ) {
 
 	} ;
 
+	/**
+	 * O(1)
+	 */
 	Graph.prototype.edel = function ( e ) {
 
 		// remove from edge list
@@ -65,11 +85,20 @@ const List = function ( DLL ) {
 
 	} ;
 
+	Graph.prototype.eitr = function* ( ) {
+
+		yield* this.E ;
+
+	} ;
+
 	Graph.prototype.iitr = function* ( v ) {
 
 		yield* v.E ;
 
 	} ;
+
+	Graph.prototype.initr = Graph.prototype.iitr ;
+	Graph.prototype.outitr = Graph.prototype.iitr ;
 
 	Graph.prototype.nitr = function* ( w ) {
 
@@ -77,11 +106,8 @@ const List = function ( DLL ) {
 
 	} ;
 
-	Graph.prototype.eitr = function* ( ) {
-
-		yield* this.E ;
-
-	} ;
+	Graph.prototype.dsitr = Graph.prototype.nitr ;
+	Graph.prototype.dpitr = Graph.prototype.nitr ;
 
 	Graph.prototype.edges = function* ( ) {
 
@@ -95,14 +121,22 @@ const List = function ( DLL ) {
 
 	} ;
 
+	Graph.prototype.ingoing = Graph.prototype.incident ;
+	Graph.prototype.outgoing = Graph.prototype.incident ;
+
 	Graph.prototype.endpoints = function ( e ) {
 
 		return [ e.u , e.v ] ;
 
 	} ;
 
+	/**
+	 * O(1)
+	 */
+	Graph.prototype.reverse = function ( ) { } ;
+
 	return Graph ;
 
 } ;
 
-exports.List = List ;
+exports.MultiGraph = MultiGraph ;
