@@ -14,10 +14,10 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 
 			this.u = u;
 			this.v = v;
-			this.iterator = null;
+			this.ref = null;
 			this.twin = null;
+			this.iterator = null;
 			this.list = list;
-			this.ref = ref;
 		};
 
 		exports.DiEdge = DiEdge;
