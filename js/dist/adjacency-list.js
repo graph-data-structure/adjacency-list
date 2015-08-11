@@ -146,14 +146,14 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
     */
 			Graph.prototype.eadd = function (u, v) {
 
-				var uv = new DiEdge(u, v, this.succ);
-				var vu = new DiEdge(v, u, this.pred);
+				var uv = new DiEdge(u, v, this.succ.get(u));
+				var vu = new DiEdge(v, u, this.pred.get(v));
 
 				// add to edge list of u
-				uv.iterator = this.succ.get(u).push(uv);
+				uv.iterator = uv.list.push(uv);
 
 				// add to edge list of v
-				vu.iterator = this.pred.get(v).push(vu);
+				vu.iterator = vu.list.push(vu);
 
 				// set twin
 				uv.twin = vu;

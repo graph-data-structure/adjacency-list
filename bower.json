@@ -12,7 +12,7 @@
 		".gitignore",
 		"README.md"
 	],
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"main": "js/dist/adjacency-list.js",
 	"homepage": "http://aureooms.github.io/js-adjacency-list/",
 	"license": "AGPL-3.0",
