@@ -67,13 +67,13 @@ for operation involving the successors and predecessors maps.</p></div></div><di
 
 	Graph.prototype.initr = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"> v </span>) </span>{
 
-		<span class="hljs-keyword">yield</span>* <span class="hljs-keyword">this</span>.pred.get( v ) ;
+		<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> e <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.pred.get( v ) ) <span class="hljs-keyword">yield</span> e.ref ;
 
 	} ;
 
 	Graph.prototype.outitr = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"> v </span>) </span>{
 
-		<span class="hljs-keyword">yield</span>* <span class="hljs-keyword">this</span>.succ.get( v ) ;
+		<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> e <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.succ.get( v ) ) <span class="hljs-keyword">yield</span> e.ref ;
 
 	} ;
 
@@ -96,9 +96,15 @@ for operation involving the successors and predecessors maps.</p></div></div><di
 
 	} ;
 
+	Graph.prototype.vertices = Graph.prototype.vitr ;
+
 	Graph.prototype.edges = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"> </span>) </span>{
 
-		<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> e <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.eitr( ) ) <span class="hljs-keyword">yield</span> [ e.u , e.v , e ] ;
+		<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> [ _ , edges ] <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.succ ) {
+
+			<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> e <span class="hljs-keyword">of</span> edges ) <span class="hljs-keyword">yield</span> [ e.u , e.v , e.ref ] ;
+
+		}
 
 	} ;
 
@@ -111,20 +117,20 @@ for operation involving the successors and predecessors maps.</p></div></div><di
 
 	Graph.prototype.ingoing = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"> u </span>) </span>{
 
-		<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> e <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.initr( u ) ) <span class="hljs-keyword">yield</span> [ e.u , e.v , e ] ;
+		<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> e <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.pred.get( u ) ) <span class="hljs-keyword">yield</span> [ e.v , e.u , e.ref ] ;
 
 	} ;
 
 	Graph.prototype.outgoing = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"> u </span>) </span>{
 
-		<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> e <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.outitr( u ) ) <span class="hljs-keyword">yield</span> [ e.u , e.v , e ] ;
+		<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> e <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.succ.get( u ) ) <span class="hljs-keyword">yield</span> [ e.u , e.v , e.ref ] ;
 
 	} ;
 
 
 	Graph.prototype.endpoints = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> e </span>) </span>{
 
-		<span class="hljs-keyword">return</span> [ e.u , e.v ] ;
+		<span class="hljs-keyword">return</span> e.list === <span class="hljs-keyword">this</span>.succ.get( e.u ) ? [ e.u , e.v ] : [ e.v , e.u ] ;
 
 	} ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>O(1)</p></div></div><div class="code"><div class="wrapper">	Graph.prototype.reverse = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> </span>) </span>{
 
