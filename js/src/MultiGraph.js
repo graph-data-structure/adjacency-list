@@ -109,6 +109,8 @@ const MultiGraph = function ( List ) {
 	Graph.prototype.dsitr = Graph.prototype.nitr ;
 	Graph.prototype.dpitr = Graph.prototype.nitr ;
 
+	Graph.prototype.vertices = Graph.prototype.vitr ;
+
 	Graph.prototype.edges = function* ( ) {
 
 		for ( let e of this.eitr( ) ) yield [ e.u , e.v , e ] ;

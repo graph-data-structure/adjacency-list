@@ -328,49 +328,7 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 			});
 
 			Graph.prototype.initr = regeneratorRuntime.mark(function callee$3$0(v) {
-				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
-					while (1) switch (context$4$0.prev = context$4$0.next) {
-						case 0:
-							return context$4$0.delegateYield(this.pred.get(v), "t0", 1);
-
-						case 1:
-						case "end":
-							return context$4$0.stop();
-					}
-				}, callee$3$0, this);
-			});
-
-			Graph.prototype.outitr = regeneratorRuntime.mark(function callee$3$0(v) {
-				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
-					while (1) switch (context$4$0.prev = context$4$0.next) {
-						case 0:
-							return context$4$0.delegateYield(this.succ.get(v), "t0", 1);
-
-						case 1:
-						case "end":
-							return context$4$0.stop();
-					}
-				}, callee$3$0, this);
-			});
-
-			Graph.prototype.nitr = regeneratorRuntime.mark(function callee$3$0(u) {
-				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
-					while (1) switch (context$4$0.prev = context$4$0.next) {
-						case 0:
-							return context$4$0.delegateYield(this.dsitr(u), "t0", 1);
-
-						case 1:
-							return context$4$0.delegateYield(this.dpitr(u), "t1", 2);
-
-						case 2:
-						case "end":
-							return context$4$0.stop();
-					}
-				}, callee$3$0, this);
-			});
-
-			Graph.prototype.dsitr = regeneratorRuntime.mark(function callee$3$0(u) {
-				var _iteratorNormalCompletion5, _didIteratorError5, _iteratorError5, _iterator5, _step5, v;
+				var _iteratorNormalCompletion5, _didIteratorError5, _iteratorError5, _iterator5, _step5, e;
 
 				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
 					while (1) switch (context$4$0.prev = context$4$0.next) {
@@ -379,7 +337,7 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 							_didIteratorError5 = false;
 							_iteratorError5 = undefined;
 							context$4$0.prev = 3;
-							_iterator5 = this.succ.get(u)[Symbol.iterator]();
+							_iterator5 = this.pred.get(v)[Symbol.iterator]();
 
 						case 5:
 							if (_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done) {
@@ -387,9 +345,9 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 								break;
 							}
 
-							v = _step5.value.v;
+							e = _step5.value;
 							context$4$0.next = 9;
-							return v;
+							return e.ref;
 
 						case 9:
 							_iteratorNormalCompletion5 = true;
@@ -437,8 +395,8 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 				}, callee$3$0, this, [[3, 14, 18, 26], [19,, 21, 25]]);
 			});
 
-			Graph.prototype.dpitr = regeneratorRuntime.mark(function callee$3$0(u) {
-				var _iteratorNormalCompletion6, _didIteratorError6, _iteratorError6, _iterator6, _step6, v;
+			Graph.prototype.outitr = regeneratorRuntime.mark(function callee$3$0(v) {
+				var _iteratorNormalCompletion6, _didIteratorError6, _iteratorError6, _iterator6, _step6, e;
 
 				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
 					while (1) switch (context$4$0.prev = context$4$0.next) {
@@ -447,7 +405,7 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 							_didIteratorError6 = false;
 							_iteratorError6 = undefined;
 							context$4$0.prev = 3;
-							_iterator6 = this.pred.get(u)[Symbol.iterator]();
+							_iterator6 = this.succ.get(v)[Symbol.iterator]();
 
 						case 5:
 							if (_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done) {
@@ -455,9 +413,9 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 								break;
 							}
 
-							v = _step6.value.v;
+							e = _step6.value;
 							context$4$0.next = 9;
-							return v;
+							return e.ref;
 
 						case 9:
 							_iteratorNormalCompletion6 = true;
@@ -505,8 +463,24 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 				}, callee$3$0, this, [[3, 14, 18, 26], [19,, 21, 25]]);
 			});
 
-			Graph.prototype.edges = regeneratorRuntime.mark(function callee$3$0() {
-				var _iteratorNormalCompletion7, _didIteratorError7, _iteratorError7, _iterator7, _step7, e;
+			Graph.prototype.nitr = regeneratorRuntime.mark(function callee$3$0(u) {
+				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
+					while (1) switch (context$4$0.prev = context$4$0.next) {
+						case 0:
+							return context$4$0.delegateYield(this.dsitr(u), "t0", 1);
+
+						case 1:
+							return context$4$0.delegateYield(this.dpitr(u), "t1", 2);
+
+						case 2:
+						case "end":
+							return context$4$0.stop();
+					}
+				}, callee$3$0, this);
+			});
+
+			Graph.prototype.dsitr = regeneratorRuntime.mark(function callee$3$0(u) {
+				var _iteratorNormalCompletion7, _didIteratorError7, _iteratorError7, _iterator7, _step7, v;
 
 				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
 					while (1) switch (context$4$0.prev = context$4$0.next) {
@@ -515,7 +489,7 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 							_didIteratorError7 = false;
 							_iteratorError7 = undefined;
 							context$4$0.prev = 3;
-							_iterator7 = this.eitr()[Symbol.iterator]();
+							_iterator7 = this.succ.get(u)[Symbol.iterator]();
 
 						case 5:
 							if (_iteratorNormalCompletion7 = (_step7 = _iterator7.next()).done) {
@@ -523,9 +497,9 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 								break;
 							}
 
-							e = _step7.value;
+							v = _step7.value.v;
 							context$4$0.next = 9;
-							return [e.u, e.v, e];
+							return v;
 
 						case 9:
 							_iteratorNormalCompletion7 = true;
@@ -573,24 +547,8 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 				}, callee$3$0, this, [[3, 14, 18, 26], [19,, 21, 25]]);
 			});
 
-			Graph.prototype.incident = regeneratorRuntime.mark(function callee$3$0(u) {
-				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
-					while (1) switch (context$4$0.prev = context$4$0.next) {
-						case 0:
-							return context$4$0.delegateYield(this.ingoing(u), "t0", 1);
-
-						case 1:
-							return context$4$0.delegateYield(this.outgoing(u), "t1", 2);
-
-						case 2:
-						case "end":
-							return context$4$0.stop();
-					}
-				}, callee$3$0, this);
-			});
-
-			Graph.prototype.ingoing = regeneratorRuntime.mark(function callee$3$0(u) {
-				var _iteratorNormalCompletion8, _didIteratorError8, _iteratorError8, _iterator8, _step8, e;
+			Graph.prototype.dpitr = regeneratorRuntime.mark(function callee$3$0(u) {
+				var _iteratorNormalCompletion8, _didIteratorError8, _iteratorError8, _iterator8, _step8, v;
 
 				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
 					while (1) switch (context$4$0.prev = context$4$0.next) {
@@ -599,7 +557,7 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 							_didIteratorError8 = false;
 							_iteratorError8 = undefined;
 							context$4$0.prev = 3;
-							_iterator8 = this.initr(u)[Symbol.iterator]();
+							_iterator8 = this.pred.get(u)[Symbol.iterator]();
 
 						case 5:
 							if (_iteratorNormalCompletion8 = (_step8 = _iterator8.next()).done) {
@@ -607,9 +565,9 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 								break;
 							}
 
-							e = _step8.value;
+							v = _step8.value.v;
 							context$4$0.next = 9;
-							return [e.u, e.v, e];
+							return v;
 
 						case 9:
 							_iteratorNormalCompletion8 = true;
@@ -657,8 +615,10 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 				}, callee$3$0, this, [[3, 14, 18, 26], [19,, 21, 25]]);
 			});
 
-			Graph.prototype.outgoing = regeneratorRuntime.mark(function callee$3$0(u) {
-				var _iteratorNormalCompletion9, _didIteratorError9, _iteratorError9, _iterator9, _step9, e;
+			Graph.prototype.vertices = Graph.prototype.vitr;
+
+			Graph.prototype.edges = regeneratorRuntime.mark(function callee$3$0() {
+				var _iteratorNormalCompletion9, _didIteratorError9, _iteratorError9, _iterator9, _step9, _step9$value, _, edges, _iteratorNormalCompletion10, _didIteratorError10, _iteratorError10, _iterator10, _step10, e;
 
 				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
 					while (1) switch (context$4$0.prev = context$4$0.next) {
@@ -667,20 +627,158 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 							_didIteratorError9 = false;
 							_iteratorError9 = undefined;
 							context$4$0.prev = 3;
-							_iterator9 = this.outitr(u)[Symbol.iterator]();
+							_iterator9 = this.succ[Symbol.iterator]();
 
 						case 5:
 							if (_iteratorNormalCompletion9 = (_step9 = _iterator9.next()).done) {
+								context$4$0.next = 38;
+								break;
+							}
+
+							_step9$value = _slicedToArray(_step9.value, 2);
+							_ = _step9$value[0];
+							edges = _step9$value[1];
+							_iteratorNormalCompletion10 = true;
+							_didIteratorError10 = false;
+							_iteratorError10 = undefined;
+							context$4$0.prev = 12;
+							_iterator10 = edges[Symbol.iterator]();
+
+						case 14:
+							if (_iteratorNormalCompletion10 = (_step10 = _iterator10.next()).done) {
+								context$4$0.next = 21;
+								break;
+							}
+
+							e = _step10.value;
+							context$4$0.next = 18;
+							return [e.u, e.v, e.ref];
+
+						case 18:
+							_iteratorNormalCompletion10 = true;
+							context$4$0.next = 14;
+							break;
+
+						case 21:
+							context$4$0.next = 27;
+							break;
+
+						case 23:
+							context$4$0.prev = 23;
+							context$4$0.t0 = context$4$0["catch"](12);
+							_didIteratorError10 = true;
+							_iteratorError10 = context$4$0.t0;
+
+						case 27:
+							context$4$0.prev = 27;
+							context$4$0.prev = 28;
+
+							if (!_iteratorNormalCompletion10 && _iterator10["return"]) {
+								_iterator10["return"]();
+							}
+
+						case 30:
+							context$4$0.prev = 30;
+
+							if (!_didIteratorError10) {
+								context$4$0.next = 33;
+								break;
+							}
+
+							throw _iteratorError10;
+
+						case 33:
+							return context$4$0.finish(30);
+
+						case 34:
+							return context$4$0.finish(27);
+
+						case 35:
+							_iteratorNormalCompletion9 = true;
+							context$4$0.next = 5;
+							break;
+
+						case 38:
+							context$4$0.next = 44;
+							break;
+
+						case 40:
+							context$4$0.prev = 40;
+							context$4$0.t1 = context$4$0["catch"](3);
+							_didIteratorError9 = true;
+							_iteratorError9 = context$4$0.t1;
+
+						case 44:
+							context$4$0.prev = 44;
+							context$4$0.prev = 45;
+
+							if (!_iteratorNormalCompletion9 && _iterator9["return"]) {
+								_iterator9["return"]();
+							}
+
+						case 47:
+							context$4$0.prev = 47;
+
+							if (!_didIteratorError9) {
+								context$4$0.next = 50;
+								break;
+							}
+
+							throw _iteratorError9;
+
+						case 50:
+							return context$4$0.finish(47);
+
+						case 51:
+							return context$4$0.finish(44);
+
+						case 52:
+						case "end":
+							return context$4$0.stop();
+					}
+				}, callee$3$0, this, [[3, 40, 44, 52], [12, 23, 27, 35], [28,, 30, 34], [45,, 47, 51]]);
+			});
+
+			Graph.prototype.incident = regeneratorRuntime.mark(function callee$3$0(u) {
+				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
+					while (1) switch (context$4$0.prev = context$4$0.next) {
+						case 0:
+							return context$4$0.delegateYield(this.ingoing(u), "t0", 1);
+
+						case 1:
+							return context$4$0.delegateYield(this.outgoing(u), "t1", 2);
+
+						case 2:
+						case "end":
+							return context$4$0.stop();
+					}
+				}, callee$3$0, this);
+			});
+
+			Graph.prototype.ingoing = regeneratorRuntime.mark(function callee$3$0(u) {
+				var _iteratorNormalCompletion11, _didIteratorError11, _iteratorError11, _iterator11, _step11, e;
+
+				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
+					while (1) switch (context$4$0.prev = context$4$0.next) {
+						case 0:
+							_iteratorNormalCompletion11 = true;
+							_didIteratorError11 = false;
+							_iteratorError11 = undefined;
+							context$4$0.prev = 3;
+							_iterator11 = this.pred.get(u)[Symbol.iterator]();
+
+						case 5:
+							if (_iteratorNormalCompletion11 = (_step11 = _iterator11.next()).done) {
 								context$4$0.next = 12;
 								break;
 							}
 
-							e = _step9.value;
+							e = _step11.value;
 							context$4$0.next = 9;
-							return [e.u, e.v, e];
+							return [e.v, e.u, e.ref];
 
 						case 9:
-							_iteratorNormalCompletion9 = true;
+							_iteratorNormalCompletion11 = true;
 							context$4$0.next = 5;
 							break;
 
@@ -691,26 +789,94 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 						case 14:
 							context$4$0.prev = 14;
 							context$4$0.t0 = context$4$0["catch"](3);
-							_didIteratorError9 = true;
-							_iteratorError9 = context$4$0.t0;
+							_didIteratorError11 = true;
+							_iteratorError11 = context$4$0.t0;
 
 						case 18:
 							context$4$0.prev = 18;
 							context$4$0.prev = 19;
 
-							if (!_iteratorNormalCompletion9 && _iterator9["return"]) {
-								_iterator9["return"]();
+							if (!_iteratorNormalCompletion11 && _iterator11["return"]) {
+								_iterator11["return"]();
 							}
 
 						case 21:
 							context$4$0.prev = 21;
 
-							if (!_didIteratorError9) {
+							if (!_didIteratorError11) {
 								context$4$0.next = 24;
 								break;
 							}
 
-							throw _iteratorError9;
+							throw _iteratorError11;
+
+						case 24:
+							return context$4$0.finish(21);
+
+						case 25:
+							return context$4$0.finish(18);
+
+						case 26:
+						case "end":
+							return context$4$0.stop();
+					}
+				}, callee$3$0, this, [[3, 14, 18, 26], [19,, 21, 25]]);
+			});
+
+			Graph.prototype.outgoing = regeneratorRuntime.mark(function callee$3$0(u) {
+				var _iteratorNormalCompletion12, _didIteratorError12, _iteratorError12, _iterator12, _step12, e;
+
+				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
+					while (1) switch (context$4$0.prev = context$4$0.next) {
+						case 0:
+							_iteratorNormalCompletion12 = true;
+							_didIteratorError12 = false;
+							_iteratorError12 = undefined;
+							context$4$0.prev = 3;
+							_iterator12 = this.succ.get(u)[Symbol.iterator]();
+
+						case 5:
+							if (_iteratorNormalCompletion12 = (_step12 = _iterator12.next()).done) {
+								context$4$0.next = 12;
+								break;
+							}
+
+							e = _step12.value;
+							context$4$0.next = 9;
+							return [e.u, e.v, e.ref];
+
+						case 9:
+							_iteratorNormalCompletion12 = true;
+							context$4$0.next = 5;
+							break;
+
+						case 12:
+							context$4$0.next = 18;
+							break;
+
+						case 14:
+							context$4$0.prev = 14;
+							context$4$0.t0 = context$4$0["catch"](3);
+							_didIteratorError12 = true;
+							_iteratorError12 = context$4$0.t0;
+
+						case 18:
+							context$4$0.prev = 18;
+							context$4$0.prev = 19;
+
+							if (!_iteratorNormalCompletion12 && _iterator12["return"]) {
+								_iterator12["return"]();
+							}
+
+						case 21:
+							context$4$0.prev = 21;
+
+							if (!_didIteratorError12) {
+								context$4$0.next = 24;
+								break;
+							}
+
+							throw _iteratorError12;
 
 						case 24:
 							return context$4$0.finish(21);
@@ -727,7 +893,7 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 
 			Graph.prototype.endpoints = function (e) {
 
-				return [e.u, e.v];
+				return e.list === this.succ.get(e.u) ? [e.u, e.v] : [e.v, e.u];
 			};
 
 			/**
@@ -782,26 +948,26 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 			Graph.prototype.vdel = function (v) {
 
 				// remove all incident edges
-				var _iteratorNormalCompletion10 = true;
-				var _didIteratorError10 = false;
-				var _iteratorError10 = undefined;
+				var _iteratorNormalCompletion13 = true;
+				var _didIteratorError13 = false;
+				var _iteratorError13 = undefined;
 
 				try {
-					for (var _iterator10 = this.iitr(v)[Symbol.iterator](), _step10; !(_iteratorNormalCompletion10 = (_step10 = _iterator10.next()).done); _iteratorNormalCompletion10 = true) {
-						var e = _step10.value;
+					for (var _iterator13 = this.iitr(v)[Symbol.iterator](), _step13; !(_iteratorNormalCompletion13 = (_step13 = _iterator13.next()).done); _iteratorNormalCompletion13 = true) {
+						var e = _step13.value;
 						this.edel(e);
 					} // remove vertex
 				} catch (err) {
-					_didIteratorError10 = true;
-					_iteratorError10 = err;
+					_didIteratorError13 = true;
+					_iteratorError13 = err;
 				} finally {
 					try {
-						if (!_iteratorNormalCompletion10 && _iterator10["return"]) {
-							_iterator10["return"]();
+						if (!_iteratorNormalCompletion13 && _iterator13["return"]) {
+							_iterator13["return"]();
 						}
 					} finally {
-						if (_didIteratorError10) {
-							throw _iteratorError10;
+						if (_didIteratorError13) {
+							throw _iteratorError13;
 						}
 					}
 				}
@@ -886,31 +1052,31 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 			Graph.prototype.outitr = Graph.prototype.iitr;
 
 			Graph.prototype.nitr = regeneratorRuntime.mark(function callee$3$0(w) {
-				var _iteratorNormalCompletion11, _didIteratorError11, _iteratorError11, _iterator11, _step11, _step11$value, u, v;
+				var _iteratorNormalCompletion14, _didIteratorError14, _iteratorError14, _iterator14, _step14, _step14$value, u, v;
 
 				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
 					while (1) switch (context$4$0.prev = context$4$0.next) {
 						case 0:
-							_iteratorNormalCompletion11 = true;
-							_didIteratorError11 = false;
-							_iteratorError11 = undefined;
+							_iteratorNormalCompletion14 = true;
+							_didIteratorError14 = false;
+							_iteratorError14 = undefined;
 							context$4$0.prev = 3;
-							_iterator11 = w.E[Symbol.iterator]();
+							_iterator14 = w.E[Symbol.iterator]();
 
 						case 5:
-							if (_iteratorNormalCompletion11 = (_step11 = _iterator11.next()).done) {
+							if (_iteratorNormalCompletion14 = (_step14 = _iterator14.next()).done) {
 								context$4$0.next = 14;
 								break;
 							}
 
-							_step11$value = _step11.value;
-							u = _step11$value.u;
-							v = _step11$value.v;
+							_step14$value = _step14.value;
+							u = _step14$value.u;
+							v = _step14$value.v;
 							context$4$0.next = 11;
 							return u === w ? v : u;
 
 						case 11:
-							_iteratorNormalCompletion11 = true;
+							_iteratorNormalCompletion14 = true;
 							context$4$0.next = 5;
 							break;
 
@@ -921,26 +1087,26 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 						case 16:
 							context$4$0.prev = 16;
 							context$4$0.t0 = context$4$0["catch"](3);
-							_didIteratorError11 = true;
-							_iteratorError11 = context$4$0.t0;
+							_didIteratorError14 = true;
+							_iteratorError14 = context$4$0.t0;
 
 						case 20:
 							context$4$0.prev = 20;
 							context$4$0.prev = 21;
 
-							if (!_iteratorNormalCompletion11 && _iterator11["return"]) {
-								_iterator11["return"]();
+							if (!_iteratorNormalCompletion14 && _iterator14["return"]) {
+								_iterator14["return"]();
 							}
 
 						case 23:
 							context$4$0.prev = 23;
 
-							if (!_didIteratorError11) {
+							if (!_didIteratorError14) {
 								context$4$0.next = 26;
 								break;
 							}
 
-							throw _iteratorError11;
+							throw _iteratorError14;
 
 						case 26:
 							return context$4$0.finish(23);
@@ -958,30 +1124,32 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 			Graph.prototype.dsitr = Graph.prototype.nitr;
 			Graph.prototype.dpitr = Graph.prototype.nitr;
 
+			Graph.prototype.vertices = Graph.prototype.vitr;
+
 			Graph.prototype.edges = regeneratorRuntime.mark(function callee$3$0() {
-				var _iteratorNormalCompletion12, _didIteratorError12, _iteratorError12, _iterator12, _step12, e;
+				var _iteratorNormalCompletion15, _didIteratorError15, _iteratorError15, _iterator15, _step15, e;
 
 				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
 					while (1) switch (context$4$0.prev = context$4$0.next) {
 						case 0:
-							_iteratorNormalCompletion12 = true;
-							_didIteratorError12 = false;
-							_iteratorError12 = undefined;
+							_iteratorNormalCompletion15 = true;
+							_didIteratorError15 = false;
+							_iteratorError15 = undefined;
 							context$4$0.prev = 3;
-							_iterator12 = this.eitr()[Symbol.iterator]();
+							_iterator15 = this.eitr()[Symbol.iterator]();
 
 						case 5:
-							if (_iteratorNormalCompletion12 = (_step12 = _iterator12.next()).done) {
+							if (_iteratorNormalCompletion15 = (_step15 = _iterator15.next()).done) {
 								context$4$0.next = 12;
 								break;
 							}
 
-							e = _step12.value;
+							e = _step15.value;
 							context$4$0.next = 9;
 							return [e.u, e.v, e];
 
 						case 9:
-							_iteratorNormalCompletion12 = true;
+							_iteratorNormalCompletion15 = true;
 							context$4$0.next = 5;
 							break;
 
@@ -992,26 +1160,26 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 						case 14:
 							context$4$0.prev = 14;
 							context$4$0.t0 = context$4$0["catch"](3);
-							_didIteratorError12 = true;
-							_iteratorError12 = context$4$0.t0;
+							_didIteratorError15 = true;
+							_iteratorError15 = context$4$0.t0;
 
 						case 18:
 							context$4$0.prev = 18;
 							context$4$0.prev = 19;
 
-							if (!_iteratorNormalCompletion12 && _iterator12["return"]) {
-								_iterator12["return"]();
+							if (!_iteratorNormalCompletion15 && _iterator15["return"]) {
+								_iterator15["return"]();
 							}
 
 						case 21:
 							context$4$0.prev = 21;
 
-							if (!_didIteratorError12) {
+							if (!_didIteratorError15) {
 								context$4$0.next = 24;
 								break;
 							}
 
-							throw _iteratorError12;
+							throw _iteratorError15;
 
 						case 24:
 							return context$4$0.finish(21);
@@ -1027,29 +1195,29 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 			});
 
 			Graph.prototype.incident = regeneratorRuntime.mark(function callee$3$0(v) {
-				var _iteratorNormalCompletion13, _didIteratorError13, _iteratorError13, _iterator13, _step13, e;
+				var _iteratorNormalCompletion16, _didIteratorError16, _iteratorError16, _iterator16, _step16, e;
 
 				return regeneratorRuntime.wrap(function callee$3$0$(context$4$0) {
 					while (1) switch (context$4$0.prev = context$4$0.next) {
 						case 0:
-							_iteratorNormalCompletion13 = true;
-							_didIteratorError13 = false;
-							_iteratorError13 = undefined;
+							_iteratorNormalCompletion16 = true;
+							_didIteratorError16 = false;
+							_iteratorError16 = undefined;
 							context$4$0.prev = 3;
-							_iterator13 = this.iitr(v)[Symbol.iterator]();
+							_iterator16 = this.iitr(v)[Symbol.iterator]();
 
 						case 5:
-							if (_iteratorNormalCompletion13 = (_step13 = _iterator13.next()).done) {
+							if (_iteratorNormalCompletion16 = (_step16 = _iterator16.next()).done) {
 								context$4$0.next = 12;
 								break;
 							}
 
-							e = _step13.value;
+							e = _step16.value;
 							context$4$0.next = 9;
 							return [e.u, e.v, e];
 
 						case 9:
-							_iteratorNormalCompletion13 = true;
+							_iteratorNormalCompletion16 = true;
 							context$4$0.next = 5;
 							break;
 
@@ -1060,26 +1228,26 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 						case 14:
 							context$4$0.prev = 14;
 							context$4$0.t0 = context$4$0["catch"](3);
-							_didIteratorError13 = true;
-							_iteratorError13 = context$4$0.t0;
+							_didIteratorError16 = true;
+							_iteratorError16 = context$4$0.t0;
 
 						case 18:
 							context$4$0.prev = 18;
 							context$4$0.prev = 19;
 
-							if (!_iteratorNormalCompletion13 && _iterator13["return"]) {
-								_iterator13["return"]();
+							if (!_iteratorNormalCompletion16 && _iterator16["return"]) {
+								_iterator16["return"]();
 							}
 
 						case 21:
 							context$4$0.prev = 21;
 
-							if (!_didIteratorError13) {
+							if (!_didIteratorError16) {
 								context$4$0.next = 24;
 								break;
 							}
 
-							throw _iteratorError13;
+							throw _iteratorError16;
 
 						case 24:
 							return context$4$0.finish(21);

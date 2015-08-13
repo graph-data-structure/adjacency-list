@@ -115,13 +115,13 @@ const MultiDiGraph = function ( List , Map ) {
 
 	Graph.prototype.initr = function* ( v ) {
 
-		yield* this.pred.get( v ) ;
+		for ( let e of this.pred.get( v ) ) yield e.ref ;
 
 	} ;
 
 	Graph.prototype.outitr = function* ( v ) {
 
-		yield* this.succ.get( v ) ;
+		for ( let e of this.succ.get( v ) ) yield e.ref ;
 
 	} ;
 
@@ -144,9 +144,15 @@ const MultiDiGraph = function ( List , Map ) {
 
 	} ;
 
+	Graph.prototype.vertices = Graph.prototype.vitr ;
+
 	Graph.prototype.edges = function* ( ) {
 
-		for ( let e of this.eitr( ) ) yield [ e.u , e.v , e ] ;
+		for ( let [ _ , edges ] of this.succ ) {
+
+			for ( let e of edges ) yield [ e.u , e.v , e.ref ] ;
+
+		}
 
 	} ;
 
@@ -159,20 +165,20 @@ const MultiDiGraph = function ( List , Map ) {
 
 	Graph.prototype.ingoing = function* ( u ) {
 
-		for ( let e of this.initr( u ) ) yield [ e.u , e.v , e ] ;
+		for ( let e of this.pred.get( u ) ) yield [ e.v , e.u , e.ref ] ;
 
 	} ;
 
 	Graph.prototype.outgoing = function* ( u ) {
 
-		for ( let e of this.outitr( u ) ) yield [ e.u , e.v , e ] ;
+		for ( let e of this.succ.get( u ) ) yield [ e.u , e.v , e.ref ] ;
 
 	} ;
 
 
 	Graph.prototype.endpoints = function ( e ) {
 
-		return [ e.u , e.v ] ;
+		return e.list === this.succ.get( e.u ) ? [ e.u , e.v ] : [ e.v , e.u ] ;
 
 	} ;
 
