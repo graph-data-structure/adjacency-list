@@ -123,8 +123,17 @@ const MultiGraph = function ( List ) {
 
 	} ;
 
-	Graph.prototype.ingoing = Graph.prototype.incident ;
-	Graph.prototype.outgoing = Graph.prototype.incident ;
+	Graph.prototype.ingoing = function* ( v ) {
+
+		for ( let e of this.iitr( v ) ) yield [ e.u === v ? e.v : e.u , v , e ] ;
+
+	} ;
+
+	Graph.prototype.outgoing = function* ( v ) {
+
+		for ( let e of this.iitr( v ) ) yield [ v , e.u === v ? e.v : e.u , e ] ;
+
+	} ;
 
 	Graph.prototype.endpoints = function ( e ) {
 
