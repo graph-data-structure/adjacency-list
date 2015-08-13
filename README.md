@@ -1,11 +1,13 @@
 [js-adjacency-list](http://aureooms.github.io/js-adjacency-list)
 ==
 
-Adjacency list code bricks for JavaScript. Parent is
-[js-gn](http://github.com/aureooms/js-gn).
+Adjacency list code bricks for JavaScript.
+Follows the specification in
+[js-graph-spec](https://github.com/aureooms/js-graph-spec).
+Parent is [js-gn](https://github.com/aureooms/js-gn).
 
 ```js
-for ( let e of E( G ) ) ... ;
+for ( let v of V( G ) ) ... ;
 ```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-adjacency-list.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-adjacency-list/master/LICENSE)
@@ -105,7 +107,8 @@ require( [ "aureooms-js-adjacency-list" ] , function ( adjacencylist ) { ... } )
 ```js
 let dll = require( "aureooms-js-dll" ) ;
 
-let Graph = adjacencylist.List( dll.DoublyLinkedList ) ;
+let MultiGraph = adjacencylist.MultiGraph( dll.DoublyLinkedList ) ;
+// use `adjacencylist.MultiDiGraph` for directed multigraphs ;
 
 let { V , E , N } = require( "aureooms-js-graph-theory-notation" ) ;
 
