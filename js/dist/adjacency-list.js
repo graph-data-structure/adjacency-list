@@ -1272,7 +1272,7 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 							_didIteratorError17 = false;
 							_iteratorError17 = undefined;
 							context$4$0.prev = 3;
-							_iterator17 = this.iitr(v)[Symbol.iterator]();
+							_iterator17 = this.initr(v)[Symbol.iterator]();
 
 						case 5:
 							if (_iteratorNormalCompletion17 = (_step17 = _iterator17.next()).done) {
@@ -1340,7 +1340,7 @@ var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = 
 							_didIteratorError18 = false;
 							_iteratorError18 = undefined;
 							context$4$0.prev = 3;
-							_iterator18 = this.iitr(v)[Symbol.iterator]();
+							_iterator18 = this.outitr(v)[Symbol.iterator]();
 
 						case 5:
 							if (_iteratorNormalCompletion18 = (_step18 = _iterator18.next()).done) {
