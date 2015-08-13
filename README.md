@@ -106,9 +106,11 @@ require( [ "aureooms-js-adjacency-list" ] , function ( adjacencylist ) { ... } )
 
 ```js
 let dll = require( "aureooms-js-dll" ) ;
+let List = dll.DoublyLinkedList ;
 
-let MultiGraph = adjacencylist.MultiGraph( dll.DoublyLinkedList ) ;
-// use `adjacencylist.MultiDiGraph` for directed multigraphs ;
+let MultiGraph = adjacencylist.MultiGraph( List ) ;
+// use `adjacencylist.MultiDiGraph( List , Map )` for directed multigraphs ;
+// (`Map` is the new es6 class, or any other polyfill implementation)
 
 let { V , E , N } = require( "aureooms-js-graph-theory-notation" ) ;
 
