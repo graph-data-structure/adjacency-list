@@ -24,7 +24,7 @@
 	"devDependencies": {
 		"aureooms-js-dll": "^6.0.9",
 		"aureooms-js-graph-spec": "^5.0.0",
-		"aureooms-node-package": "^6.0.1"
+		"aureooms-node-package": "^7.0.0"
 	},
 	"name": "aureooms-js-adjacency-list",
 	"homepage": "http://aureooms.github.io/js-adjacency-list/",
