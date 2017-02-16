@@ -10,16 +10,16 @@ Parent is [js-gn](https://github.com/aureooms/js-gn).
 for ( let v of V( G ) ) ... ;
 ```
 
-[![NPM license](http://img.shields.io/npm/l/@aureooms/js-adjacency-list.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-adjacency-list/master/LICENSE)
-[![NPM version](http://img.shields.io/npm/v/@aureooms/js-adjacency-list.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-adjacency-list)
-[![Bower version](http://img.shields.io/bower/v/@aureooms/js-adjacency-list.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-adjacency-list)
-[![Build Status](http://img.shields.io/travis/aureooms/js-adjacency-list.svg?style=flat)](https://travis-ci.org/aureooms/js-adjacency-list)
-[![Coverage Status](http://img.shields.io/coveralls/aureooms/js-adjacency-list.svg?style=flat)](https://coveralls.io/r/aureooms/js-adjacency-list)
-[![Dependencies Status](http://img.shields.io/david/aureooms/js-adjacency-list.svg?style=flat)](https://david-dm.org/aureooms/js-adjacency-list#info=dependencies)
-[![devDependencies Status](http://img.shields.io/david/dev/aureooms/js-adjacency-list.svg?style=flat)](https://david-dm.org/aureooms/js-adjacency-list#info=devDependencies)
-[![Code Climate](http://img.shields.io/codeclimate/github/aureooms/js-adjacency-list.svg?style=flat)](https://codeclimate.com/github/aureooms/js-adjacency-list)
-[![NPM downloads per month](http://img.shields.io/npm/dm/@aureooms/js-adjacency-list.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-adjacency-list)
-[![GitHub issues](http://img.shields.io/github/issues/aureooms/js-adjacency-list.svg?style=flat)](https://github.com/aureooms/js-adjacency-list/issues)
+[![NPM license](https://img.shields.io/npm/l/@aureooms/js-adjacency-list.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-adjacency-list/master/LICENSE)
+[![NPM version](https://img.shields.io/npm/v/@aureooms/js-adjacency-list.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-adjacency-list)
+[![Bower version](https://img.shields.io/bower/v/@aureooms/js-adjacency-list.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-adjacency-list)
+[![Build Status](https://img.shields.io/travis/aureooms/js-adjacency-list.svg?style=flat)](https://travis-ci.org/aureooms/js-adjacency-list)
+[![Coverage Status](https://img.shields.io/coveralls/aureooms/js-adjacency-list.svg?style=flat)](https://coveralls.io/r/aureooms/js-adjacency-list)
+[![Dependencies Status](https://img.shields.io/david/aureooms/js-adjacency-list.svg?style=flat)](https://david-dm.org/aureooms/js-adjacency-list#info=dependencies)
+[![devDependencies Status](https://img.shields.io/david/dev/aureooms/js-adjacency-list.svg?style=flat)](https://david-dm.org/aureooms/js-adjacency-list#info=devDependencies)
+[![Code Climate](https://img.shields.io/codeclimate/github/aureooms/js-adjacency-list.svg?style=flat)](https://codeclimate.com/github/aureooms/js-adjacency-list)
+[![NPM downloads per month](https://img.shields.io/npm/dm/@aureooms/js-adjacency-list.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-adjacency-list)
+[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-adjacency-list.svg?style=flat)](https://github.com/aureooms/js-adjacency-list/issues)
 [![Inline docs](http://inch-ci.org/github/aureooms/js-adjacency-list.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-adjacency-list)
 
 Can be managed through [jspm](https://github.com/jspm/jspm-cli),
