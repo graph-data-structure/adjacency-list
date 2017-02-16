@@ -10,7 +10,7 @@ Parent is [js-gn](https://github.com/aureooms/js-gn).
 for ( let v of V( G ) ) ... ;
 ```
 
-[![NPM license](https://img.shields.io/npm/l/@aureooms/js-adjacency-list.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-adjacency-list/master/LICENSE)
+[![License](https://img.shields.io/github/license/aureooms/js-adjacency-list.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-adjacency-list/master/LICENSE)
 [![NPM version](https://img.shields.io/npm/v/@aureooms/js-adjacency-list.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-adjacency-list)
 [![Bower version](https://img.shields.io/bower/v/@aureooms/js-adjacency-list.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-adjacency-list)
 [![Build Status](https://img.shields.io/travis/aureooms/js-adjacency-list.svg?style=flat)](https://travis-ci.org/aureooms/js-adjacency-list)
