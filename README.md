@@ -1,4 +1,4 @@
-[js-adjacency-list](http://aureooms.github.io/js-adjacency-list)
+[js-adjacency-list](http://make-github-pseudonymous-again.github.io/js-adjacency-list)
 ==
 
 Adjacency list code bricks for JavaScript.

@@ -14,7 +14,7 @@
 	],
 	"version": "4.0.7",
 	"main": "js/dist/adjacency-list.js",
-	"homepage": "http://aureooms.github.io/js-adjacency-list/",
+	"homepage": "http://make-github-pseudonymous-again.github.io/js-adjacency-list/",
 	"license": "AGPL-3.0",
 	"name": "aureooms-js-adjacency-list",
 	"description": "adjacency list code bricks for JavaScript"

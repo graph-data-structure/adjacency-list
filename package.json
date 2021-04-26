@@ -27,7 +27,7 @@
 		"aureooms-node-package": "^6.0.1"
 	},
 	"name": "@aureooms/js-adjacency-list",
-	"homepage": "http://aureooms.github.io/js-adjacency-list/",
+	"homepage": "http://make-github-pseudonymous-again.github.io/js-adjacency-list/",
 	"scripts": {
 		"test": "./node_modules/.bin/aureooms-node-package-test",
 		"doc": "./node_modules/.bin/groc",
