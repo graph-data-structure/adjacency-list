@@ -3,24 +3,24 @@
 
 Adjacency list code bricks for JavaScript.
 Follows the specification in
-[js-graph-spec](https://github.com/aureooms/js-graph-spec).
-Parent is [js-gn](https://github.com/aureooms/js-gn).
+[js-graph-spec](https://github.com/make-github-pseudonymous-again/js-graph-spec).
+Parent is [js-gn](https://github.com/make-github-pseudonymous-again/js-gn).
 
 ```js
 for ( let v of V( G ) ) ... ;
 ```
 
-[![License](https://img.shields.io/github/license/aureooms/js-adjacency-list.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-adjacency-list/master/LICENSE)
+[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-adjacency-list.svg?style=flat)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-adjacency-list/master/LICENSE)
 [![NPM version](https://img.shields.io/npm/v/@aureooms/js-adjacency-list.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-adjacency-list)
 [![Bower version](https://img.shields.io/bower/v/@aureooms/js-adjacency-list.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-adjacency-list)
-[![Build Status](https://img.shields.io/travis/aureooms/js-adjacency-list.svg?style=flat)](https://travis-ci.org/aureooms/js-adjacency-list)
-[![Coverage Status](https://img.shields.io/coveralls/aureooms/js-adjacency-list.svg?style=flat)](https://coveralls.io/r/aureooms/js-adjacency-list)
-[![Dependencies Status](https://img.shields.io/david/aureooms/js-adjacency-list.svg?style=flat)](https://david-dm.org/aureooms/js-adjacency-list#info=dependencies)
-[![devDependencies Status](https://img.shields.io/david/dev/aureooms/js-adjacency-list.svg?style=flat)](https://david-dm.org/aureooms/js-adjacency-list#info=devDependencies)
-[![Code Climate](https://img.shields.io/codeclimate/github/aureooms/js-adjacency-list.svg?style=flat)](https://codeclimate.com/github/aureooms/js-adjacency-list)
+[![Build Status](https://img.shields.io/travis/make-github-pseudonymous-again/js-adjacency-list.svg?style=flat)](https://travis-ci.org/make-github-pseudonymous-again/js-adjacency-list)
+[![Coverage Status](https://img.shields.io/coveralls/make-github-pseudonymous-again/js-adjacency-list.svg?style=flat)](https://coveralls.io/r/make-github-pseudonymous-again/js-adjacency-list)
+[![Dependencies Status](https://img.shields.io/david/make-github-pseudonymous-again/js-adjacency-list.svg?style=flat)](https://david-dm.org/make-github-pseudonymous-again/js-adjacency-list#info=dependencies)
+[![devDependencies Status](https://img.shields.io/david/dev/make-github-pseudonymous-again/js-adjacency-list.svg?style=flat)](https://david-dm.org/make-github-pseudonymous-again/js-adjacency-list#info=devDependencies)
+[![Code Climate](https://img.shields.io/codeclimate/github/make-github-pseudonymous-again/js-adjacency-list.svg?style=flat)](https://codeclimate.com/github/make-github-pseudonymous-again/js-adjacency-list)
 [![NPM downloads per month](https://img.shields.io/npm/dm/@aureooms/js-adjacency-list.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-adjacency-list)
-[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-adjacency-list.svg?style=flat)](https://github.com/aureooms/js-adjacency-list/issues)
-[![Inline docs](http://inch-ci.org/github/aureooms/js-adjacency-list.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-adjacency-list)
+[![GitHub issues](https://img.shields.io/github/issues/make-github-pseudonymous-again/js-adjacency-list.svg?style=flat)](https://github.com/make-github-pseudonymous-again/js-adjacency-list/issues)
+[![Inline docs](http://inch-ci.org/github/make-github-pseudonymous-again/js-adjacency-list.svg?branch=master&style=shields)](http://inch-ci.org/github/make-github-pseudonymous-again/js-adjacency-list)
 
 Can be managed through [jspm](https://github.com/jspm/jspm-cli),
 [duo](https://github.com/duojs/duo),
