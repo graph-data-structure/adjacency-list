@@ -10,7 +10,7 @@ Parent is [js-gn](https://github.com/make-github-pseudonymous-again/js-gn).
 for ( let v of V( G ) ) ... ;
 ```
 
-[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-adjacency-list.svg?style=flat)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-adjacency-list/master/LICENSE)
+[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-adjacency-list.svg?style=flat)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-adjacency-list/main/LICENSE)
 [![NPM version](https://img.shields.io/npm/v/@aureooms/js-adjacency-list.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-adjacency-list)
 [![Bower version](https://img.shields.io/bower/v/@aureooms/js-adjacency-list.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-adjacency-list)
 [![Build Status](https://img.shields.io/travis/make-github-pseudonymous-again/js-adjacency-list.svg?style=flat)](https://travis-ci.org/make-github-pseudonymous-again/js-adjacency-list)
