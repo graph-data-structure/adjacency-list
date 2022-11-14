@@ -1,9 +1,8 @@
 
-const Vertex = function ( edges ) {
+export function Vertex ( edges ) {
 
 	this.iterator = null ;
 	this.E = edges ;
 
-} ;
+}
 
-exports.Vertex = Vertex ;

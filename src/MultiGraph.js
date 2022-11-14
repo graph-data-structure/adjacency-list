@@ -4,7 +4,7 @@
  * a classical Doubly Linked List implementation.
  */
 
-const MultiGraph = function ( List ) {
+export function MultiGraph ( List ) {
 
 	/**
 	 * O(1)
@@ -148,6 +148,5 @@ const MultiGraph = function ( List ) {
 
 	return Graph ;
 
-} ;
+}
 
-exports.MultiGraph = MultiGraph ;

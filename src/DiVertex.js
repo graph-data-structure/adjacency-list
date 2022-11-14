@@ -1,8 +1,7 @@
 
-const DiVertex = function ( ) {
+export function DiVertex ( ) {
 
 	this.iterator = null ;
 
-} ;
+}
 
-exports.DiVertex = DiVertex ;

@@ -1,5 +1,5 @@
 
-const Edge = function ( u , v ) {
+export function Edge ( u , v ) {
 
 	this.u = u ;
 	this.v = v ;
@@ -7,6 +7,5 @@ const Edge = function ( u , v ) {
 	this.uiterator = null ;
 	this.viterator = null ;
 
-} ;
+}
 
-exports.Edge = Edge ;

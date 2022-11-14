@@ -1,5 +1,5 @@
 
-const DiEdge = function ( u , v , list ) {
+export function DiEdge ( u , v , list ) {
 
 	this.u = u ;
 	this.v = v ;
@@ -8,6 +8,5 @@ const DiEdge = function ( u , v , list ) {
 	this.iterator = null ;
 	this.list = list ;
 
-} ;
+}
 
-exports.DiEdge = DiEdge ;

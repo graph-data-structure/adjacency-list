@@ -6,7 +6,7 @@
  * for operation involving the successors and predecessors maps.
  */
 
-const MultiDiGraph = function ( List , Map ) {
+export function MultiDiGraph ( List , Map ) {
 
 	/**
 	 * O(1)
@@ -196,6 +196,5 @@ const MultiDiGraph = function ( List , Map ) {
 
 	return Graph ;
 
-} ;
+}
 
-exports.MultiDiGraph = MultiDiGraph ;
