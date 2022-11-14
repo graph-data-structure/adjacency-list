@@ -6,148 +6,117 @@ import Edge from './Edge.js';
  * a classical Doubly Linked List implementation.
  */
 
-export default function MultiGraph ( List ) {
+export default function MultiGraph(List) {
+	/**
+	 * O(1)
+	 */
+	const Graph = function () {
+		this.V = new List();
+		this.E = new List();
+	};
 
 	/**
 	 * O(1)
 	 */
-	const Graph = function ( ) {
+	Graph.prototype.vadd = function () {
+		const v = new Vertex(new List());
 
-		this.V = new List( ) ;
-		this.E = new List( ) ;
+		v.iterator = this.V.push(v);
 
-	} ;
-
-	/**
-	 * O(1)
-	 */
-	Graph.prototype.vadd = function ( ) {
-
-		const v = new Vertex( new List( ) ) ;
-
-		v.iterator = this.V.push( v ) ;
-
-		return v ;
-
-	} ;
+		return v;
+	};
 
 	/**
 	 * O(n) where n is the degree of v
 	 */
-	Graph.prototype.vdel = function ( v ) {
+	Graph.prototype.vdel = function (v) {
+		// Remove all incident edges
+		for (const e of this.iitr(v)) this.edel(e);
 
-		// remove all incident edges
-		for ( let e of this.iitr( v ) ) this.edel( e ) ;
-
-		// remove vertex
-		this.V.erase( v.iterator ) ;
-
-	} ;
+		// Remove vertex
+		this.V.erase(v.iterator);
+	};
 
 	/**
 	 * O(1)
 	 */
-	Graph.prototype.eadd = function ( u , v ) {
+	Graph.prototype.eadd = function (u, v) {
+		const e = new Edge(u, v);
 
-		const e = new Edge( u , v ) ;
+		// Add to edge list
+		e.iterator = this.E.push(e);
 
-		// add to edge list
-		e.iterator = this.E.push( e ) ;
+		// Add to edge list of u
+		e.uiterator = u.E.push(e);
 
-		// add to edge list of u
-		e.uiterator = u.E.push( e ) ;
+		// Add to edge list of v if u !== v
+		if (u !== v) e.viterator = v.E.push(e);
 
-		// add to edge list of v if u !== v
-		if ( u !== v ) e.viterator = v.E.push( e ) ;
-
-		return e ;
-
-	} ;
+		return e;
+	};
 
 	/**
 	 * O(1)
 	 */
-	Graph.prototype.edel = function ( e ) {
+	Graph.prototype.edel = function (e) {
+		// Remove from edge list
+		this.E.erase(e.iterator);
 
-		// remove from edge list
-		this.E.erase( e.iterator ) ;
+		// Remove from edge list of u
+		e.u.E.erase(e.uiterator);
 
-		// remove from edge list of u
-		e.u.E.erase( e.uiterator ) ;
+		// Remove from edge list of v if u !== v
+		if (e.u !== e.v) e.v.E.erase(e.viterator);
+	};
 
-		// remove from edge list of v if u !== v
-		if ( e.u !== e.v ) e.v.E.erase( e.viterator ) ;
+	Graph.prototype.vitr = function* () {
+		yield* this.V;
+	};
 
-	} ;
+	Graph.prototype.eitr = function* () {
+		yield* this.E;
+	};
 
+	Graph.prototype.iitr = function* (v) {
+		yield* v.E;
+	};
 
-	Graph.prototype.vitr = function* ( ) {
+	Graph.prototype.initr = Graph.prototype.iitr;
+	Graph.prototype.outitr = Graph.prototype.iitr;
 
-		yield* this.V ;
+	Graph.prototype.nitr = function* (w) {
+		for (const {u, v} of w.E) yield u === w ? v : u;
+	};
 
-	} ;
+	Graph.prototype.dsitr = Graph.prototype.nitr;
+	Graph.prototype.dpitr = Graph.prototype.nitr;
 
-	Graph.prototype.eitr = function* ( ) {
+	Graph.prototype.vertices = Graph.prototype.vitr;
 
-		yield* this.E ;
+	Graph.prototype.edges = function* () {
+		for (const e of this.eitr()) yield [e.u, e.v, e];
+	};
 
-	} ;
+	Graph.prototype.incident = function* (v) {
+		for (const e of this.iitr(v)) yield [e.u, e.v, e];
+	};
 
-	Graph.prototype.iitr = function* ( v ) {
+	Graph.prototype.ingoing = function* (v) {
+		for (const e of this.initr(v)) yield [e.u === v ? e.v : e.u, v, e];
+	};
 
-		yield* v.E ;
+	Graph.prototype.outgoing = function* (v) {
+		for (const e of this.outitr(v)) yield [v, e.u === v ? e.v : e.u, e];
+	};
 
-	} ;
-
-	Graph.prototype.initr = Graph.prototype.iitr ;
-	Graph.prototype.outitr = Graph.prototype.iitr ;
-
-	Graph.prototype.nitr = function* ( w ) {
-
-		for ( let { u , v } of w.E ) yield u === w ? v : u ;
-
-	} ;
-
-	Graph.prototype.dsitr = Graph.prototype.nitr ;
-	Graph.prototype.dpitr = Graph.prototype.nitr ;
-
-	Graph.prototype.vertices = Graph.prototype.vitr ;
-
-	Graph.prototype.edges = function* ( ) {
-
-		for ( let e of this.eitr( ) ) yield [ e.u , e.v , e ] ;
-
-	} ;
-
-	Graph.prototype.incident = function* ( v ) {
-
-		for ( let e of this.iitr( v ) ) yield [ e.u , e.v , e ] ;
-
-	} ;
-
-	Graph.prototype.ingoing = function* ( v ) {
-
-		for ( let e of this.initr( v ) ) yield [ e.u === v ? e.v : e.u , v , e ] ;
-
-	} ;
-
-	Graph.prototype.outgoing = function* ( v ) {
-
-		for ( let e of this.outitr( v ) ) yield [ v , e.u === v ? e.v : e.u , e ] ;
-
-	} ;
-
-	Graph.prototype.endpoints = function ( e ) {
-
-		return [ e.u , e.v ] ;
-
-	} ;
+	Graph.prototype.endpoints = function (e) {
+		return [e.u, e.v];
+	};
 
 	/**
 	 * O(1)
 	 */
-	Graph.prototype.reverse = function ( ) { } ;
+	Graph.prototype.reverse = function () {};
 
-	return Graph ;
-
+	return Graph;
 }

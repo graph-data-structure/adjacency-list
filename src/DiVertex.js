@@ -1,3 +1,3 @@
-export default function DiVertex ( ) {
-	this.iterator = null ;
+export default function DiVertex() {
+	this.iterator = null;
 }

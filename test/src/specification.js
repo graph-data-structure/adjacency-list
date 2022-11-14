@@ -1,8 +1,10 @@
 import test from 'ava';
-import {MultiGraph, MultiDiGraph} from '../../src/index.js';
 
 import {DoublyLinkedList} from '@list-abstraction/doubly-linked-list';
 import * as spec from '@graph-data-structure/specification';
+import {MultiGraph, MultiDiGraph} from '../../src/index.js';
 
-spec.multiGraph( test, "MultiGraph" , MultiGraph( DoublyLinkedList ) ) ;
-spec.multiDigraph( test, "MultiDiGraph" , MultiDiGraph( DoublyLinkedList , Map ) ) ;
+// eslint-disable-next-line new-cap
+spec.multiGraph(test, 'MultiGraph', MultiGraph(DoublyLinkedList));
+// eslint-disable-next-line new-cap
+spec.multiDigraph(test, 'MultiDiGraph', MultiDiGraph(DoublyLinkedList, Map));
