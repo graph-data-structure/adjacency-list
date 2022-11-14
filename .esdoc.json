@@ -13,7 +13,7 @@
           "autoPrivate": true
         },
         "brand": {
-          "title": "@aureooms/js-adjacency-list"
+          "title": "@graph-data-structure/adjacency-list"
         },
         "test": {
           "type": "ava",

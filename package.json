@@ -1,8 +1,8 @@
 {
-  "name": "@aureooms/js-adjacency-list",
+  "name": "@graph-data-structure/adjacency-list",
   "description": "adjacency list code bricks for JavaScript",
   "version": "4.0.7",
-  "author": "aureooms",
+  "author": "make-github-pseudonymous-again",
   "ava": {
     "files": [
       "test/src/**/*"
@@ -97,7 +97,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-adjacency-list/issues"
+    "url": "https://github.com/graph-data-structure/adjacency-list/issues"
   },
   "dependencies": {},
   "devDependencies": {
@@ -138,7 +138,7 @@
   "files": [
     "dist"
   ],
-  "homepage": "http://make-github-pseudonymous-again.github.io/js-adjacency-list/",
+  "homepage": "http://graph-data-structure.github.io/adjacency-list",
   "keywords": [
     "adjacency",
     "bricks",
@@ -161,7 +161,7 @@
   "module": "dist/index.module.mjs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/make-github-pseudonymous-again/js-adjacency-list.git"
+    "url": "https://github.com/graph-data-structure/adjacency-list.git"
   },
   "scripts": {
     "build": "NODE_ENV=production microbundle",
