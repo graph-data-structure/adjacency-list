@@ -185,5 +185,8 @@
         ]
       }
     }
+  },
+  "prettier": {
+    "trailingComma": "all"
   }
 }
