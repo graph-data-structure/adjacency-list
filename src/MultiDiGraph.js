@@ -1,3 +1,5 @@
+import DiVertex from './DiVertex.js';
+import DiEdge from './DiEdge.js';
 
 /**
  * Complexity of each update operation in comments for
@@ -6,7 +8,7 @@
  * for operation involving the successors and predecessors maps.
  */
 
-export function MultiDiGraph ( List , Map ) {
+export default function MultiDiGraph ( List , Map ) {
 
 	/**
 	 * O(1)
@@ -197,4 +199,3 @@ export function MultiDiGraph ( List , Map ) {
 	return Graph ;
 
 }
-

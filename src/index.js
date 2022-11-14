@@ -1,6 +1,6 @@
-export * from './DiEdge.js';
-export * from './DiVertex.js';
-export * from './Edge.js';
-export * from './MultiDiGraph.js';
-export * from './MultiGraph.js';
-export * from './Vertex.js';
+export {default as DiEdge} from './DiEdge.js';
+export {default as DiVertex} from './DiVertex.js';
+export {default as Edge} from './Edge.js';
+export {default as MultiDiGraph} from './MultiDiGraph.js';
+export {default as MultiGraph} from './MultiGraph.js';
+export {default as Vertex} from './Vertex.js';

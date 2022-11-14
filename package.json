@@ -16,12 +16,7 @@
   "babel": {
     "sourceMaps": true,
     "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": "current node"
-        }
-      ]
+      "@babel/preset-env"
     ],
     "plugins": [
       [
@@ -94,6 +89,8 @@
           ]
         ],
         "plugins": [
+          "@babel/plugin-transform-destructuring",
+          "@babel/plugin-transform-for-of",
           "babel-plugin-unassert"
         ]
       }
@@ -104,13 +101,15 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@aureooms/js-dll": "^6.0.10",
-    "@aureooms/js-graph-spec": "^5.0.2",
     "@babel/core": "7.20.2",
+    "@babel/plugin-transform-destructuring": "^7.20.2",
+    "@babel/plugin-transform-for-of": "^7.18.8",
     "@babel/preset-env": "7.20.2",
     "@babel/register": "7.18.9",
     "@commitlint/cli": "16.3.0",
+    "@graph-data-structure/specification": "^6.0.2",
     "@js-library/commitlint-config": "0.0.4",
+    "@list-abstraction/doubly-linked-list": "^9.0.1",
     "ava": "3.15.0",
     "babel-plugin-transform-remove-console": "6.9.4",
     "babel-plugin-unassert": "3.2.0",

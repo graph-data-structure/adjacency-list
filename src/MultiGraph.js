@@ -1,10 +1,12 @@
+import Vertex from './Vertex.js';
+import Edge from './Edge.js';
 
 /**
  * Complexity of each update operation in comments for
  * a classical Doubly Linked List implementation.
  */
 
-export function MultiGraph ( List ) {
+export default function MultiGraph ( List ) {
 
 	/**
 	 * O(1)
@@ -149,4 +151,3 @@ export function MultiGraph ( List ) {
 	return Graph ;
 
 }
-
