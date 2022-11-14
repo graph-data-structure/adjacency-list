@@ -1,5 +1,5 @@
 import test from 'ava';
-import {MultiGraph, MultiDiGraph} from '../../src';
+import {MultiGraph, MultiDiGraph} from '../../src/index.js';
 
 import {DoublyLinkedList} from '@list-abstraction/doubly-linked-list';
 import * as spec from '@graph-data-structure/specification';
