@@ -1,47 +1,68 @@
 {
-	"main": "js/dist/adjacency-list.js",
-	"version": "4.0.7",
-	"bugs": {
-		"url": "https://github.com/make-github-pseudonymous-again/js-adjacency-list/issues"
-	},
-	"keywords": [
-		"adjacency",
-		"bricks",
-		"data",
-		"edge",
-		"edges",
-		"ender",
-		"graph",
-		"graphs",
-		"javascript",
-		"js",
-		"list",
-		"structure",
-		"structures",
-		"vertex",
-		"vertices"
-	],
-	"devDependencies": {
-		"@aureooms/js-dll": "^6.0.9",
-		"@aureooms/js-graph-spec": "^5.0.0",
-		"aureooms-node-package": "^6.0.1"
-	},
-	"name": "@aureooms/js-adjacency-list",
-	"homepage": "http://make-github-pseudonymous-again.github.io/js-adjacency-list/",
-	"scripts": {
-		"test": "./node_modules/.bin/aureooms-node-package-test",
-		"doc": "./node_modules/.bin/groc",
-		"build": "./node_modules/.bin/aureooms-node-package-build"
-	},
-	"description": "adjacency list code bricks for JavaScript",
-	"spm": {
-		"main": "js/dist/adjacency-list.js"
-	},
-	"author": "aureooms",
-	"dependencies": {},
-	"license": "AGPL-3.0",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/make-github-pseudonymous-again/js-adjacency-list.git"
-	}
+  "main": "js/dist/adjacency-list.js",
+  "version": "4.0.7",
+  "bugs": {
+    "url": "https://github.com/make-github-pseudonymous-again/js-adjacency-list/issues"
+  },
+  "keywords": [
+    "adjacency",
+    "bricks",
+    "data",
+    "edge",
+    "edges",
+    "ender",
+    "graph",
+    "graphs",
+    "javascript",
+    "js",
+    "list",
+    "structure",
+    "structures",
+    "vertex",
+    "vertices"
+  ],
+  "devDependencies": {
+    "@aureooms/js-dll": "^6.0.9",
+    "@aureooms/js-graph-spec": "^5.0.0",
+    "aureooms-node-package": "^6.0.1",
+    "@babel/core": "7.16.5",
+    "@babel/preset-env": "7.16.5",
+    "@babel/register": "7.16.5",
+    "@commitlint/cli": "16.0.0",
+    "@js-library/commitlint-config": "0.0.4",
+    "ava": "3.15.0",
+    "babel-plugin-transform-remove-console": "6.9.4",
+    "babel-plugin-unassert": "3.2.0",
+    "babel-preset-power-assert": "3.0.0",
+    "c8": "7.11.0",
+    "esdoc": "1.1.0",
+    "esdoc-inject-script-plugin": "1.0.0",
+    "esdoc-inject-style-plugin": "1.0.0",
+    "esdoc-standard-plugin": "1.0.0",
+    "fixpack": "4.0.0",
+    "husky": "7.0.4",
+    "lint-staged": "12.1.7",
+    "microbundle": "0.14.2",
+    "np": "7.6.0",
+    "pinst": "2.1.6",
+    "power-assert": "1.6.1"
+  },
+  "name": "@aureooms/js-adjacency-list",
+  "homepage": "http://make-github-pseudonymous-again.github.io/js-adjacency-list/",
+  "scripts": {
+    "test": "./node_modules/.bin/aureooms-node-package-test",
+    "doc": "./node_modules/.bin/groc",
+    "build": "./node_modules/.bin/aureooms-node-package-build"
+  },
+  "description": "adjacency list code bricks for JavaScript",
+  "spm": {
+    "main": "js/dist/adjacency-list.js"
+  },
+  "author": "aureooms",
+  "dependencies": {},
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/make-github-pseudonymous-again/js-adjacency-list.git"
+  }
 }
