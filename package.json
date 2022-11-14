@@ -1,5 +1,5 @@
 {
-  "main": "js/dist/adjacency-list.js",
+  "main": "dist/index.js",
   "version": "4.0.7",
   "bugs": {
     "url": "https://github.com/make-github-pseudonymous-again/js-adjacency-list/issues"
@@ -51,7 +51,7 @@
   "homepage": "http://make-github-pseudonymous-again.github.io/js-adjacency-list/",
   "scripts": {
     "test": "ava",
-    "build": "./node_modules/.bin/aureooms-node-package-build",
+    "build": "NODE_ENV=production microbundle",
     "build-docs": "esdoc",
     "lint": "true"
   },
@@ -161,5 +161,17 @@
       "@babel/register"
     ],
     "timeout": "1m"
+  },
+  "source": "src/index.js",
+  "module": "dist/index.module.mjs",
+  "umd:main": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
+  "exports": {
+    ".": {
+      "browser": "./dist/index.module.mjs",
+      "umd": "./dist/index.umd.js",
+      "require": "./dist/index.js",
+      "default": "./dist/index.modern.mjs"
+    }
   }
 }
