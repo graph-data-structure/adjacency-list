@@ -24,15 +24,6 @@ for ( let v of V( G ) ) ... ;
 [![Documentation](https://graph-data-structure.github.io/adjacency-list/badge.svg)](https://graph-data-structure.github.io/adjacency-list/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@graph-data-structure/adjacency-list)](https://bundlephobia.com/result?p=@graph-data-structure/adjacency-list)
 
-Can be managed through [jspm](https://github.com/jspm/jspm-cli),
-[duo](https://github.com/duojs/duo),
-[component](https://github.com/componentjs/component),
-[bower](https://github.com/bower/bower),
-[ender](https://github.com/ender-js/Ender),
-[jam](https://github.com/caolan/jam),
-[spm](https://github.com/spmjs/spm),
-and [npm](https://github.com/npm/npm).
-
 
 ## Use
 
