@@ -50,9 +50,10 @@
   "name": "@aureooms/js-adjacency-list",
   "homepage": "http://make-github-pseudonymous-again.github.io/js-adjacency-list/",
   "scripts": {
-    "test": "./node_modules/.bin/aureooms-node-package-test",
+    "test": "ava",
     "build": "./node_modules/.bin/aureooms-node-package-build",
-    "build-docs": "esdoc"
+    "build-docs": "esdoc",
+    "lint": "true"
   },
   "description": "adjacency list code bricks for JavaScript",
   "spm": {
