@@ -51,8 +51,8 @@
   "homepage": "http://make-github-pseudonymous-again.github.io/js-adjacency-list/",
   "scripts": {
     "test": "./node_modules/.bin/aureooms-node-package-test",
-    "doc": "./node_modules/.bin/groc",
-    "build": "./node_modules/.bin/aureooms-node-package-build"
+    "build": "./node_modules/.bin/aureooms-node-package-build",
+    "build-docs": "esdoc"
   },
   "description": "adjacency list code bricks for JavaScript",
   "spm": {
