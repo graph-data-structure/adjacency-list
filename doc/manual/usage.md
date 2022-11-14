@@ -13,7 +13,7 @@ import 'regenerator-runtime/runtime.js';
 
 Then, import the library where needed
 ```js
-const adjacency_list = await import('@graph-data-structure/adjacency-list');
+const {MultiGraph, MultiDiGraph} = await import('@graph-data-structure/adjacency-list');
 // or
-import * as adjacency_list from '@graph-data-structure/adjacency-list';
+import {MultiGraph, MultiDiGraph} from '@graph-data-structure/adjacency-list';
 ```
