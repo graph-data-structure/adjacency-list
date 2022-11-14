@@ -161,7 +161,7 @@
   "module": "dist/index.module.mjs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/graph-data-structure/adjacency-list.git"
+    "url": "https://github.com/graph-data-structure/adjacency-list"
   },
   "scripts": {
     "build": "NODE_ENV=production microbundle",
