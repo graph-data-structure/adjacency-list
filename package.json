@@ -59,9 +59,6 @@
     "release": "np --message ':hatching_chick: release: Bumping to v%s.'"
   },
   "description": "adjacency list code bricks for JavaScript",
-  "spm": {
-    "main": "js/dist/adjacency-list.js"
-  },
   "author": "aureooms",
   "dependencies": {},
   "license": "AGPL-3.0",
