@@ -1,10 +1,10 @@
-[js-adjacency-list](http://make-github-pseudonymous-again.github.io/js-adjacency-list)
+[@aureooms/js-adjacency-list](https://make-github-pseudonymous-again.github.io/js-adjacency-list)
 ==
 
 Adjacency list code bricks for JavaScript.
 Follows the specification in
-[js-graph-spec](https://github.com/make-github-pseudonymous-again/js-graph-spec).
-Parent is [js-gn](https://github.com/make-github-pseudonymous-again/js-gn).
+[@aureooms/js-graph-spec](https://github.com/make-github-pseudonymous-again/js-graph-spec).
+Parent is [@aureooms/js-gn](https://github.com/make-github-pseudonymous-again/js-gn).
 
 ```js
 for ( let v of V( G ) ) ... ;
