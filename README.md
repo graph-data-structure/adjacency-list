@@ -12,7 +12,7 @@ for ( let v of V( G ) ) ... ;
 
 [![License](https://img.shields.io/github/license/graph-data-structure/adjacency-list.svg)](https://raw.githubusercontent.com/graph-data-structure/adjacency-list/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@graph-data-structure/adjacency-list.svg)](https://www.npmjs.org/package/@graph-data-structure/adjacency-list)
-[![Tests](https://img.shields.io/github/workflow/status/graph-data-structure/adjacency-list/ci:cover?event=push&label=tests)](https://github.com/graph-data-structure/adjacency-list/actions/workflows/ci:cover.yml?query=branch:main)
+[![Build](https://img.shields.io/travis/graph-data-structure/specification/main.svg)](https://travis-ci.com/graph-data-structure/specification/branches)
 [![Dependencies](https://img.shields.io/librariesio/github/graph-data-structure/adjacency-list.svg)](https://github.com/graph-data-structure/adjacency-list/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/graph-data-structure/adjacency-list.svg)](https://github.com/graph-data-structure/adjacency-list/issues)
 [![Downloads](https://img.shields.io/npm/dm/@graph-data-structure/adjacency-list.svg)](https://www.npmjs.org/package/@graph-data-structure/adjacency-list)
